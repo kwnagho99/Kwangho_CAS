@@ -1,17 +1,31 @@
 package com.example.database;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class DatabaseConnection {
-    private static final String URL = "jdbc:oracle:thin:@119.196.227.241:1521:xe"; // URL 형식은 환경에 따라 다를 수 있음
-    private static final String USER = "c##kwangho"; // Oracle 데이터베이스 사용자명
-    private static final String PASSWORD = "0219"; // Oracle 데이터베이스 비밀번호
+    private static final String PROPERTIES_FILE = "config.properties";
+    private static Properties properties = new Properties();
+
+    static {
+        try {
+            properties.load(new FileInputStream(PROPERTIES_FILE));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static final String URL = properties.getProperty("db.url");
+    private static final String USER = properties.getProperty("db.user");
+    private static final String PASSWORD = properties.getProperty("db.password");
 
     public static Connection getConnection() throws SQLException {
         try {
-            Class.forName("oracle.jdbc.OracleDriver"); // 드라이버 클래스 이름이 변경되었습니다.
+            Class.forName("oracle.jdbc.OracleDriver");
         } catch (ClassNotFoundException e) {
             throw new SQLException("Oracle JDBC Driver not found", e);
         }
