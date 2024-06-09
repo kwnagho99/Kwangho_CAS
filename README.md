@@ -26,34 +26,34 @@
 ## 주요 기능
 
 ### 홈 화면
-![홈 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/홈 화면.png)
+![홈 화면](https://https://github.com/kwnagho99/Kwangho_CAS/blob/master/홈.png)
 
 ### 회사 관리 화면
-![회사 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/회사관리.png)
+![회사 관리 화면](https://https://github.com/kwnagho99/Kwangho_CAS/blob/master/회사관리.png)
 
 ### 계정 관리 화면
-![계정 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/계정관리.png)
+![계정 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/계정관리.png)
 
 ### 트랜잭션 추가 화면
-![트랜잭션 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/트랜잭션 입력.png)
+![트랜잭션 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/트랜잭션%20입력.png)
 
 ### 트랜잭션 조회 화면
-![트랜잭션 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/트랜잭션 조회.png)
+![트랜잭션 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/트랜잭션%20조회.png)
 
 ### 연결 재무제표 생성 화면
-![연결 재무제표 생성 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/연결 재무제표 생성.png)
+![연결 재무제표 생성 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/연결%20재무제표%20생성.png)
 
 ### 연결 재무제표 조회 화면
-![연결 재무제표 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/연결 재무제표 조회.png)
+![연결 재무제표 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/연결%20재무제표%20조회.png)
 
 ### 리스크 공시 추가 화면
-![리스크 공시 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/리스크 공시 입력.png)
+![리스크 공시 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/리스크%20공시%20입력.png)
 
 ### 리스크 공시 조회 화면
-![리스크 공시 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/리스크 공시 조회.png)
+![리스크 공시 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/리스크%20공시%20조회.png)
 
 ### 재무제표 주석 추가 화면
-![재무제표 주석 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/재무제표 주석 입력.png)
+![재무제표 주석 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/재무제표%20주석%20입력.png)
 
 ### 재무제표 주석 조회 화면
-![재무제표 주석 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/재무제표 주석 조회.png)
+![재무제표 주석 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/재무제표%20주석%20조회.png)
