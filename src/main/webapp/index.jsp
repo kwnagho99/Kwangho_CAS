@@ -7,10 +7,8 @@
 <body>
     <h1>홈 화면</h1>
     <ul>
-        <li><a href="editCompany.jsp">회사 추가</a></li>
-        <li><a href="companies.jsp">회사 조회</a></li>
-        <li><a href="editAccount.jsp">계정 추가</a></li>
-        <li><a href="accounts.jsp">계정 조회</a></li>
+        <li><a href="company.jsp">회사 관리</a></li>
+        <li><a href="account.jsp">계정 관리</a></li>
         <li><a href="addTransaction.jsp">트랜잭션 추가</a></li>
         <li><a href="viewTransactions.jsp">트랜잭션 조회</a></li>
         <li><a href="consolidation.jsp">연결 재무제표 생성</a></li>

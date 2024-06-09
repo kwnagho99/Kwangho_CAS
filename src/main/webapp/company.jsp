@@ -12,7 +12,7 @@
         모회사 ID: <input type="text" name="parent_company_id"><br>
         <input type="submit" value="회사 추가">
     </form>
-    
+
     <%
         String error = request.getParameter("error");
         if (error != null && !error.isEmpty()) {
@@ -37,13 +37,20 @@
             ResultSet resultSet = null;
             try {
                 connection = DatabaseConnection.getConnection();
-                String sql = "SELECT * FROM Companies";
+                String sql = "SELECT * FROM Companies ORDER BY company_id";
                 statement = connection.prepareStatement(sql);
                 resultSet = statement.executeQuery();
-                while (resultSet.next()) {
-                    int companyId = resultSet.getInt("company_id");
-                    String name = resultSet.getString("name");
-                    int parentCompanyId = resultSet.getInt("parent_company_id");
+                if (!resultSet.isBeforeFirst()) {
+                    %>
+                    <tr>
+                        <td colspan="5">회사가 없습니다.</td>
+                    </tr>
+                    <%
+                } else {
+                    while (resultSet.next()) {
+                        int companyId = resultSet.getInt("company_id");
+                        String name = resultSet.getString("name");
+                        int parentCompanyId = resultSet.getInt("parent_company_id");
         %>
         <tr>
             <td><%= companyId %></td>
@@ -53,9 +60,11 @@
             <td><a href="deleteCompany?id=<%= companyId %>" onclick="return confirm('정말로 삭제하시겠습니까?');">삭제</a></td>
         </tr>
         <%
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
+                out.println("<p style='color:red;'>데이터를 조회하는 동안 오류가 발생했습니다.</p>");
             } finally {
                 if (resultSet != null) try { resultSet.close(); } catch (SQLException ignore) {}
                 if (statement != null) try { statement.close(); } catch (SQLException ignore) {}

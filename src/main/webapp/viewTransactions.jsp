@@ -12,6 +12,7 @@
             <th>ID</th>
             <th>회사 ID</th>
             <th>계정 ID</th>
+            <th>계정 유형</th>
             <th>금액</th>
             <th>트랜잭션 날짜</th>
             <th>설명</th>
@@ -22,13 +23,17 @@
             ResultSet resultSet = null;
             try {
                 connection = DatabaseConnection.getConnection();
-                String sql = "SELECT * FROM Transactions";
+                String sql = "SELECT t.transaction_id, t.company_id, t.account_id, a.account_type, t.amount, t.transaction_date, t.description " +
+                             "FROM Transactions t, Accounts a " +
+                             "WHERE t.account_id = a.account_id " +
+                             "ORDER BY t.transaction_id";
                 statement = connection.prepareStatement(sql);
                 resultSet = statement.executeQuery();
                 while (resultSet.next()) {
                     int transactionId = resultSet.getInt("transaction_id");
                     int companyId = resultSet.getInt("company_id");
                     int accountId = resultSet.getInt("account_id");
+                    String accountType = resultSet.getString("account_type");
                     double amount = resultSet.getDouble("amount");
                     Date transactionDate = resultSet.getDate("transaction_date");
                     String description = resultSet.getString("description");
@@ -37,6 +42,7 @@
             <td><%= transactionId %></td>
             <td><%= companyId %></td>
             <td><%= accountId %></td>
+            <td><%= accountType %></td>
             <td><%= amount %></td>
             <td><%= transactionDate %></td>
             <td><%= description %></td>

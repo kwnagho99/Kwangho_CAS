@@ -24,11 +24,13 @@ public class ConsolidationServlet extends HttpServlet {
 
         try (Connection connection = DatabaseConnection.getConnection()) {
             // 자산, 부채, 자본 합산
-            String sql = "SELECT SUM(CASE WHEN account_type = 'Asset' THEN amount ELSE 0 END) AS total_assets, " +
-                         "SUM(CASE WHEN account_type = 'Liability' THEN amount ELSE 0 END) AS total_liabilities, " +
-                         "SUM(CASE WHEN account_type = 'Equity' THEN amount ELSE 0 END) AS total_equity " +
-                         "FROM Transactions t JOIN Accounts a ON t.account_id = a.account_id " +
-                         "WHERE t.company_id = ? OR t.company_id IN (SELECT company_id FROM Companies WHERE parent_company_id = ?)";
+        	String sql = "SELECT " +
+                    "SUM(CASE WHEN account_type = 'Asset' THEN amount ELSE 0 END) AS total_assets, " +
+                    "SUM(CASE WHEN account_type = 'Liability' THEN amount ELSE 0 END) AS total_liabilities, " +
+                    "SUM(CASE WHEN account_type = 'Equity' OR account_type = 'Revenue' THEN amount ELSE 0 END) AS total_equity " +
+                    "FROM Transactions t JOIN Accounts a ON t.account_id = a.account_id " +
+                    "WHERE t.company_id = ? OR t.company_id IN (SELECT company_id FROM Companies WHERE parent_company_id = ?)";
+
 
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, parentCompanyId);

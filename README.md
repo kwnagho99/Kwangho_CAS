@@ -22,3 +22,38 @@
 1. GitHub에서 프로젝트 클론
    ```sh
    git clone https://github.com/kwangho99/kwangho_cas.git
+
+## 주요 기능
+
+### 홈 화면
+![홈 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/home_screen.png)
+
+### 회사 관리 화면
+![회사 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/company_management_screen.png)
+
+### 계정 관리 화면
+![계정 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/account_management_screen.png)
+
+### 트랜잭션 추가 화면
+![트랜잭션 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/add_transaction_screen.png)
+
+### 트랜잭션 조회 화면
+![트랜잭션 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/view_transaction_screen.png)
+
+### 연결 재무제표 생성 화면
+![연결 재무제표 생성 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/create_consolidated_statement_screen.png)
+
+### 연결 재무제표 조회 화면
+![연결 재무제표 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/view_consolidated_statement_screen.png)
+
+### 리스크 공시 추가 화면
+![리스크 공시 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/add_risk_disclosure_screen.png)
+
+### 리스크 공시 조회 화면
+![리스크 공시 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/view_risk_disclosure_screen.png)
+
+### 재무제표 주석 추가 화면
+![재무제표 주석 추가 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/add_note_screen.png)
+
+### 재무제표 주석 조회 화면
+![재무제표 주석 조회 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/main/screenshots/view_note_screen.png)
