@@ -26,10 +26,10 @@
 ## 주요 기능
 
 ### 홈 화면
-![홈 화면](https://https://github.com/kwnagho99/Kwangho_CAS/blob/master/홈.png)
+![홈 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/홈%20화면.png)
 
 ### 회사 관리 화면
-![회사 관리 화면](https://https://github.com/kwnagho99/Kwangho_CAS/blob/master/회사관리.png)
+![회사 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/회사관리.png)
 
 ### 계정 관리 화면
 ![계정 관리 화면](https://github.com/kwnagho99/Kwangho_CAS/blob/master/계정관리.png)
