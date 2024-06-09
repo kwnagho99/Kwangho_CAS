@@ -1,2 +1,29 @@
-/build/
-/target/
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# MacOS specific files
+.DS_Store
+
+# Maven specific files
+target/
+
+# IDEA specific files
+.idea/
+*.iml
+
+# Node.js specific files
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+*.tmp
+
+# Build directories
+build/
+dist/
